@@ -65,7 +65,7 @@ RUN cd /tmp && \
 ADD system-root/ /
 
 ENV TERM="xterm" \
-    DB_HOST="" \
+    DB_HOST="localhost" \
     DB_PORT="" \
     DB_NAME="" \
     DB_USER=""\
@@ -77,7 +77,7 @@ ENV TERM="xterm" \
     # This is used automatically by wp-cli
     WP_CORE="/data/code/web/wp"\
     # This can be overidden by you, it's just default for us
-    TZ="Europe/Helsinki"
+    TZ="Asia/Shanghai"
 
 # Remove cache and tmp files
 RUN rm -rf /var/cache/apk/* && \
@@ -86,6 +86,6 @@ RUN rm -rf /var/cache/apk/* && \
 # Set default path to project mountpoint
 WORKDIR /data/code
 
-EXPOSE 80
+EXPOSE 233
 
 ENTRYPOINT ["/init"]
