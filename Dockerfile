@@ -68,8 +68,8 @@ ENV TERM="xterm" \
     DB_HOST="localhost" \
     DB_PORT="" \
     DB_NAME="" \
-    DB_USER="kiritoalex"\
-    DB_PASSWORD="#YR27j7SGF!F"\
+    DB_USER=""\
+    DB_PASSWORD=""\
     # This is for your project root
     PROJECT_ROOT="/data/code"\
     # This is used by nginx and php-fpm
